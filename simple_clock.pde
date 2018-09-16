@@ -21,7 +21,7 @@ ControlP5 cp5;
 CColor controlsColours;
 
 void setup(){
-  size(450, 720);
+  size(450, 750);
   
   cx = 225;
   cy = 300;
@@ -70,6 +70,10 @@ void setup(){
 
 void draw(){
   background(50);
+  fill(100);
+  rectMode(CORNER);
+  strokeWeight(0);
+  rect(0, 0, width, 20);
   
   Date time = new Date(currentTime);
   
